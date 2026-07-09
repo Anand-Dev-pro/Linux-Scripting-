@@ -8,6 +8,6 @@ memory= $( free -h | awk NR==2 { print $3}')
 
 echo "Disk usage: $disk"
 echo "CUp usage: $cpu"
-echo "Memory usage: $memeory"
+echo "Memory usage: $memory"
 
 
