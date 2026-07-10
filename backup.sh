@@ -2,7 +2,7 @@
 
 
 backup="/backup "
-source_dir="/home/ubuntu"
+source_dir="/home/ubuntu/Linux-Scripting-"
 
 
 success_fail () {
