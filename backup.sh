@@ -18,7 +18,7 @@ success_fail () {
 if [ ! -d "$backup" ]
 then 
 	echo " The $backup dir is not exits... creating... "
-	mkdir $backup
+	mkdir -p "$backup"
 
 else 
 	echo " The $backup dir is available"
