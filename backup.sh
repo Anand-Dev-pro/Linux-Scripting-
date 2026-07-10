@@ -25,7 +25,12 @@ else
 
 fi 
 
-        tar -czf "$backup/backup_$(date +%Y-%m-%d).tar.gz" "source_dir" 
+        tar -czf "$backup/backup_$(date +%Y-%m-%d).tar.gz" "source_dir"
+	
+	success_fail
+
+	rsync -av "$source_dir" "$backup"
+
 
 	success_fail
 
