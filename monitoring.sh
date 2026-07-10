@@ -3,7 +3,7 @@
 # Monitoring  script
 
 disk=$( df -h | awk 'NR==2 { print $4 }' )
-cpu=$( top -bn1 | grep Cpu | awk '{ print $3 }')
+cpu=$( top -bn1 | grep Cpu | awk '{ print $8 }')
 memory= $( free -h | awk 'NR==2 { print $3}')
 
 echo "Disk usage: $disk"
